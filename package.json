@@ -58,7 +58,7 @@
     "globals": "^16.5.0"
   },
   "dependencies": {
-    "@gesslar/toolkit": "^2.0.0",
+    "@gesslar/toolkit": "^3.0.1",
     "node-fetch": "^3.3.2"
   }
 }
