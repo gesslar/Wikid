@@ -105,7 +105,7 @@ export default class Wikid {
       await this.#getCsrfToken()
 
       return {ok: true}
-    } catch (error) {
+    } catch(error) {
       return {
         ok: false,
         error
@@ -159,7 +159,7 @@ export default class Wikid {
       this.#tokenCache.set(type, token)
 
       return token
-    } catch (error) {
+    } catch(error) {
       throw Sass.new(`Error fetching ${type} token.`, error)
     }
   }

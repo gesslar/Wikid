@@ -4,8 +4,6 @@
 
 A MediaWiki authentication library with personality. Provides bot authentication, session management, and authenticated API calls for MediaWiki.
 
-**ESM only. Requires Node.js 20+**
-
 ## Installation
 
 ```bash
@@ -101,6 +99,7 @@ wikid.logout();
 Make authenticated POST requests to MediaWiki API. Automatically handles token management.
 
 **Parameters:**
+
 - `path` (string) - API endpoint path (usually `'api.php'`)
 - `data` (object) - Request parameters as plain object
 
@@ -116,6 +115,7 @@ const response = await wikid.post('api.php', {
 ```
 
 **Automatic Token Management:**
+
 - CSRF tokens are automatically fetched and cached during login
 - Tokens are reused for all subsequent requests
 - Different token types (csrf, patrol, rollback, etc.) are handled automatically based on the action
@@ -125,6 +125,7 @@ const response = await wikid.post('api.php', {
 Make GET requests to MediaWiki API.
 
 **Parameters:**
+
 - `path` (string) - API endpoint path (usually `'api.php'`)
 - `params` (object, optional) - Query parameters as plain object
 
