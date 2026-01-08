@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@gesslar/toolkit':
         specifier: ^3.6.3
-        version: 3.14.2
+        version: 3.21.0
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -84,8 +84,13 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  '@gesslar/toolkit@3.14.2':
-    resolution: {integrity: sha512-ocjblUX7RtzR3eMmn9KymXqib+AJctHZd2B4/CPxQ2TAoisRylrPPc7bu9ODjkNccLRfdooP0sMbIHHPkgxxGw==}
+  '@gesslar/colours@0.8.0':
+    resolution: {integrity: sha512-Sy+xwKAqoE+qVZ/0jvoVRsXEaNMJTc2pEUoyoRYewlAw5k4iLuIGR6cBcZ10W1UvgYTJKxh+462+Eg0QBAx44w==}
+    engines: {node: '>=22'}
+    hasBin: true
+
+  '@gesslar/toolkit@3.21.0':
+    resolution: {integrity: sha512-LtHJFOf7ec2oYwjFgdp6zyrIabsnQxi1VPtW2Ox6FeRbuO7QGsHwrxuVqEvnEW3PzqnDT351xPOqTY8NUWPX4w==}
     engines: {node: '>=22'}
 
   '@gesslar/uglier@0.6.0':
@@ -590,9 +595,11 @@ snapshots:
 
   '@gesslar/colours@0.7.1': {}
 
-  '@gesslar/toolkit@3.14.2':
+  '@gesslar/colours@0.8.0': {}
+
+  '@gesslar/toolkit@3.21.0':
     dependencies:
-      '@gesslar/colours': 0.7.1
+      '@gesslar/colours': 0.8.0
       ajv: 8.17.1
       json5: 2.2.3
       yaml: 2.8.2
@@ -600,7 +607,7 @@ snapshots:
   '@gesslar/uglier@0.6.0(eslint@9.39.2)':
     dependencies:
       '@gesslar/colours': 0.7.1
-      '@gesslar/toolkit': 3.14.2
+      '@gesslar/toolkit': 3.21.0
       '@skarab/detect-package-manager': 1.0.0
       '@stylistic/eslint-plugin': 5.6.1(eslint@9.39.2)
       eslint: 9.39.2
