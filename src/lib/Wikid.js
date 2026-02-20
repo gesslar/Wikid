@@ -23,7 +23,6 @@
  */
 
 import {Data, Sass, Valid} from "@gesslar/toolkit"
-import fetch, {Headers,FormData} from "node-fetch"
 
 const METHODS = Object.freeze({
   POST: "POST",

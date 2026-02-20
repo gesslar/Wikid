@@ -23,13 +23,12 @@
     "real",
     "good"
   ],
-  "packageManager": "pnpm@10.26.2",
   "type": "module",
-  "main": "./src/index.js",
   "module": "./src/index.js",
   "exports": {
     ".": {
-      "import": "./src/index.js"
+      "import": "./src/index.js",
+      "types": "./src/types/lib/Wikid.d.ts"
     }
   },
   "files": [
@@ -40,26 +39,25 @@
   "scripts": {
     "dev": "node src/index.js",
     "test": "node tests/unit/Wikid.test.js",
-    "types:build": "node -e \"require('fs').rmSync('src/types',{recursive:true,force:true});\" && tsc -p tsconfig.types.json",
+    "types": "node -e \"require('fs').rmSync('src/types',{recursive:true,force:true});\" && tsc -p tsconfig.types.json",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
-    "submit": "pnpm publish --access public --//registry.npmjs.org/:_authToken=\"${NPM_ACCESS_TOKEN}\"",
-    "update": "pnpm up --latest --recursive",
+    "submit": "npm publish --access public --//registry.npmjs.org/:_authToken=\"${NPM_ACCESS_TOKEN}\"",
+    "update": "npm up --latest --recursive",
     "pr": "gt submit -p --ai",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24.13.0"
   },
   "dependencies": {
-    "@gesslar/toolkit": "^3.6.3",
-    "node-fetch": "^3.3.2"
+    "@gesslar/toolkit": "^3.6.3"
   },
   "devDependencies": {
-    "@gesslar/uglier": "^1.0.0",
-    "eslint": "^9.39.2",
+    "@gesslar/uglier": "^1.6.2",
+    "eslint": "^10.0.0",
     "typescript": "^5.9.3"
   }
 }
