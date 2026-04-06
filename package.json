@@ -53,7 +53,7 @@
     "node": ">=24.13.0"
   },
   "dependencies": {
-    "@gesslar/toolkit": "^4.0.0"
+    "@gesslar/toolkit": "^5.0.1"
   },
   "devDependencies": {
     "@gesslar/uglier": "^2.0.0",
