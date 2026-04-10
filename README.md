@@ -156,11 +156,6 @@ npm run lint:fix
 npm run types:build
 ```
 
-## Dependencies
-
-- **[@gesslar/toolkit](https://github.com/gesslar/toolkit)** - Validation, error handling with sass
-- **node-fetch** - HTTP requests
-
 ## License
 
 `@gesslar/wikid` is released under the [0BSD](LICENSE.txt).
