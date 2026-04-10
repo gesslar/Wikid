@@ -161,6 +161,13 @@ npm run types:build
 - **[@gesslar/toolkit](https://github.com/gesslar/toolkit)** - Validation, error handling with sass
 - **node-fetch** - HTTP requests
 
-## ~~License~~
+## License
 
-Unlicense
+`@gesslar/wikid` is released under the [0BSD](LICENSE.txt).
+
+This package includes or depends on third-party components under their own
+licenses:
+
+| Dependency | License |
+| --- | --- |
+| [@gesslar/toolkit](https://github.com/gesslar/toolkit) | 0BSD |
