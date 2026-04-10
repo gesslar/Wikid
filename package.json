@@ -50,7 +50,7 @@
     "major": "npm version major"
   },
   "engines": {
-    "node": ">=24.13.0"
+    "node": ">=24.11.0"
   },
   "dependencies": {
     "@gesslar/toolkit": "^5.0.1"
