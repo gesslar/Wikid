@@ -6,7 +6,7 @@
     "url": "https://gesslar.dev"
   },
   "version": "2.3.0",
-  "license": "Unlicense",
+  "license": "0BSD",
   "homepage": "https://github.com/gesslar/wikid#readme",
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "files": [
     "src",
     "README.md",
-    "UNLICENSE.txt"
+    "LICENSE.txt"
   ],
   "scripts": {
     "dev": "node src/index.js",
@@ -43,7 +43,7 @@
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
     "submit": "npm publish --access public --//registry.npmjs.org/:_authToken=\"${NPM_ACCESS_TOKEN}\"",
-    "update": "npm up --latest --recursive",
+    "update": "npx npm-check-updates -u && npm install",
     "pr": "gt submit -p --ai",
     "patch": "npm version patch",
     "minor": "npm version minor",
@@ -53,11 +53,11 @@
     "node": ">=24.13.0"
   },
   "dependencies": {
-    "@gesslar/toolkit": "^4.0.0"
+    "@gesslar/toolkit": "^5.0.1"
   },
   "devDependencies": {
-    "@gesslar/uglier": "^2.0.0",
-    "eslint": "^10.0.0",
+    "@gesslar/uglier": "^2.4.0",
+    "eslint": "^10.2.0",
     "typescript": "^6.0.2"
   }
 }
